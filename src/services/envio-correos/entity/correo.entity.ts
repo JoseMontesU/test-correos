@@ -3,10 +3,7 @@ import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn } from 'typeor
 @Entity('correos')
 export class Correos{
     @PrimaryGeneratedColumn()
-    id: number;
-
-    @Column({ type: 'varchar', length: 100 })
-    destinatario: string;
+    id?: number;
 
     @Column({ type: 'varchar', length: 100 })
     asunto: string;
@@ -18,7 +15,7 @@ export class Correos{
     estado : string;
 
     @CreateDateColumn({ name: 'created_at', default: new Date() })
-    fecha_envio: Date;
+    fecha_envio?: Date;
 
     
 }
