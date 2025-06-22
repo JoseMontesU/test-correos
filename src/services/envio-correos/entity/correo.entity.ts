@@ -1,0 +1,24 @@
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn } from 'typeorm';
+
+@Entity('correos')
+export class Correos{
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column({ type: 'varchar', length: 100 })
+    destinatario: string;
+
+    @Column({ type: 'varchar', length: 100 })
+    asunto: string;
+
+    @Column({ type: 'varchar', length: 500 })
+    mensaje: string;
+
+    @Column({ type: 'varchar', length: 50 })
+    estado : string;
+
+    @CreateDateColumn({ name: 'created_at', default: new Date() })
+    fecha_envio: Date;
+
+    
+}

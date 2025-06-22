@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { EnvioCorreosController } from './controller/envio-correos.controller';
-import { EnvioCorreosService } from './service/envio-correos.service';
+import { EnvioCorreosController } from './envio-correos.controller';
+import { EnvioCorreosService } from '../service/envio-correos.service';
 
 describe('EnvioCorreosController', () => {
   let controller: EnvioCorreosController;
