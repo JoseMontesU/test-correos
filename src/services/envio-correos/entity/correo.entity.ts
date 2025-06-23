@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn } from 'typeorm';
 
 @Entity('correos')
-export class Correos{
+export class CorreosEntity{
     @PrimaryGeneratedColumn()
     id?: number;
 
@@ -14,7 +14,7 @@ export class Correos{
     @Column({ type: 'varchar', length: 50 })
     estado : string;
 
-    @CreateDateColumn({ name: 'created_at', default: new Date() })
+    @CreateDateColumn({ name: 'fecha_envio', default: new Date() })
     fecha_envio?: Date;
 
     
