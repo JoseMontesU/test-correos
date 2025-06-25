@@ -5,7 +5,8 @@ import { EnvioCorreosModule } from './services/envio-correos/envio-correos.modul
 import { DatabaseModule } from './helper/database.conexion';
 
 @Module({
-  imports: [EnvioCorreosModule,
+  imports: [
+    EnvioCorreosModule,
     DatabaseModule
   ],
   controllers: [AppController],

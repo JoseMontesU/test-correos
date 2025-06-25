@@ -14,7 +14,7 @@ export class CorreosEntity{
     @Column({ type: 'varchar', length: 50 })
     estado : string;
 
-    @CreateDateColumn({ name: 'created_at', default: new Date() })
+    @CreateDateColumn({ name: 'fecha_envio', default: new Date() })
     fecha_envio?: Date;
 
     
