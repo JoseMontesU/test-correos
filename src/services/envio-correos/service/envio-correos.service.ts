@@ -17,5 +17,6 @@ export class EnvioCorreosService {
         if (!correo) return { success: false, message: 'Error al enviar el correo', data: null };
         return { success: true, message: 'Correo enviado correctamente', data: correo };
     }
+    
 
 }
